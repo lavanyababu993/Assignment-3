@@ -1,0 +1,88 @@
+/*author: Lavanya
+	Date: 03.03.2022
+	Time:  19: 28;
+*/
+
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+
+body{
+	background-image: url('../img/back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.menubar{
+	background-color: #000;
+	text-align: center;
+	position: relative;
+	font-size: 23px;
+	height: 15vh;
+}
+.menubar ul{
+	 list-style: none;
+	 display: inline-flex;
+}
+.menubar ul li{
+	 width:auto;
+	 padding: 20px;
+	 margin: 0;
+	 border-radius: 10px;
+
+}
+.menubar ul li:hover{
+	border-radius: 10px;
+	background-color: red;
+}
+.menubar a{
+	text-decoration: none;
+	color: #fff;
+}
+.submenu{
+	display: none;
+}
+.menubar ul li:hover .submenu{
+	display: block;
+	position: absolute;
+	background-color: #000;
+	margin-left: -15px;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+.menubar ul li:hover .submenu ul{
+	display: block;
+}
+/*!---- Navigation---!*/
+
+.row{
+   display: flex;
+   text-align: justify;
+}
+.col{
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 20px;
+	padding: 15px;
+	height: 350px;
+	color: white;
+}
+.row h2{
+	text-align: center;
+	color: #fff;
+	text-decoration: underline;
+}
+.ft{
+	background-color: #000;
+	text-align: center;
+	height: 80px;
+}
+@media screen and (max-width: 600px) {
+  .menubar, {
+		height: auto;
+	}
+.row div{
+	height: auto;
+	width: 100%;
+}
+}	
